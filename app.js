@@ -16,7 +16,7 @@ function login() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3001/auth/login", requestOptions)
+  fetch("https://talenttroop.azurewebsites.net/auth/login", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => {
@@ -63,7 +63,7 @@ function register() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3001/auth/register", requestOptions)
+  fetch("https://talenttroop.azurewebsites.net/auth/register", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
